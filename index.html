@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Watchlist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header> 
+                <img class="bg" src="img/image36.jpg">
+                <div class="text-container">
+                    <h1>Find your film</h1>
+                    <a href="watchlist.html">My Watchlist</a>
+                </div>
+              
+            </header>
+            <form>
+                <input 
+                type="text" 
+                placeholder="Search for a movie" 
+                name="search"
+                id="search"
+                pattern="[a-zA-Z0-9]+">
+                <button type="button" id="search-btn">Search</button>
+                <img src="img/Icon.png">
+            </form>    
+            <section id="movie-list" class="movie-list-area" style="overflow-y:scroll">
+                <div id="placeholder">
+                    <img class="movie-row" src="img/Icon2.png">
+                    <h2>Start exploring</h2>
+                </div>   
+            </section>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

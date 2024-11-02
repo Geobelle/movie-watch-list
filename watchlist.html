@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Watchlist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header> 
+                <img class="bg" src="img/image36.jpg">
+                <div class="text-container">
+                    <h1>My Watchlist</h1>
+                    <a href="index.html">Search for movies</a>
+                </div>
+              
+            </header>
+            <section  id="watchlist-area" class="movie-list-area" style="overflow-y:scroll">
+                <div id="placeholder1">
+                    <h2>Your watchlist is looking a little empty...</h2>
+                    <div class="add-movie">
+                        <a href="index.html">+</a>
+                        <p>Let's add some movies!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <script type="module" src="watchlist.js"></script>
+    </body>
+</html>
