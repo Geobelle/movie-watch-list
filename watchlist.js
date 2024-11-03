@@ -5,7 +5,7 @@ function renderWatchlist() {
     let watchlistArray = JSON.parse(text)
     watchlistArea.innerHTML =""
     for(let i = 0; i<watchlistArray.length; i++ ){
-        fetch(`http://www.omdbapi.com/?i=${watchlistArray[i]}&apikey=697a5c4e`)
+        fetch(`https://www.omdbapi.com/?i=${watchlistArray[i]}&apikey=697a5c4e`)
                 .then(res => res.json())
                 .then(data =>{
                     watchlistArea.insertAdjacentHTML("beforeend", `

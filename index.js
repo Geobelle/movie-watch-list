@@ -6,13 +6,13 @@ let watchlistArray =[]
 let searchArray =[]
 
 function search(){
-    fetch(`http://www.omdbapi.com/?s=${searchValue.value}&apikey=697a5c4e`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue.value}&apikey=697a5c4e`)
         .then(res => res.json())
         .then(data =>{
             movieList.innerHTML = ""
             searchArray = data.Search
             searchArray.forEach(function(idNo){
-                fetch(`http://www.omdbapi.com/?i=${idNo.imdbID}&apikey=697a5c4e`)
+                fetch(`https://www.omdbapi.com/?i=${idNo.imdbID}&apikey=697a5c4e`)
                 .then(res => res.json())
                 .then(data =>{
                     movieList.insertAdjacentHTML("beforeend", `
